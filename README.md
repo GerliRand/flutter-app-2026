@@ -24,6 +24,7 @@ When running the app in an Android emulator, the backend URL is:
 
 ```text
 http://10.0.2.2:5000/feedback
+```
 
 ## Setup
 Install dependencies:
