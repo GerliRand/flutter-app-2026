@@ -1,17 +1,38 @@
-# flutter_app_2026
+# Flutter App
 
-A new Flutter project.
+This is a simple Flutter feedback application for the Cross-Platform Mobile Application Development course.
 
-## Getting Started
+The application sends feedback data to a Flask backend using an HTTP POST request.
 
-This project is a starting point for a Flutter application.
+## Features
+- Name input field
+- Feedback input field
+- Send feedback button
+- HTTP POST request to backend
+- Basic error handling
+- Success and error messages shown in the UI
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies
+- Flutter
+- Dart
+- http package
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Backend
+This Flutter app uses a separate Flask backend: https://github.com/GerliRand/flutter-app-backend2026
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+When running the app in an Android emulator, the backend URL is:
+
+```text
+http://10.0.2.2:5000/feedback
+
+## Setup
+Install dependencies:
+
+```bash
+flutter pub get
+```
+
+## Run the app
+```bash
+flutter run
+```
