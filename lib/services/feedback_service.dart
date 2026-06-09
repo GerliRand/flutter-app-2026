@@ -8,6 +8,9 @@ class FeedbackService {
   // Android emulator use localhost
   static const String baseUrl = "http://10.0.2.2:5000";
 
+  // Localhost - when using the mobile
+  //static const String baseUrl = "http://127.0.0.1:5000";
+
   // Sends feedback data to the backend with a POST request
   Future<String> sendFeedback(FeedbackRequest request) async {
     final response = await http.post(
